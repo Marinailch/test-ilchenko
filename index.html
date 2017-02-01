@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Тест Ильченко</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="style/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet'
+          type='text/css'>
+    <script type="text/javascript" src="script/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body onload="imageRotator()">
+<div class="conteiner">
+    <div id="header_menu">
+        <a id="logo" href="index.html"><img style="margin-top: 0;" src="img/logo.png"></a>
+        <div id="menu_mob" onclick="block();"></div>
+
+        <div id="menu">
+            <ul>
+                <a href=""><img src="img/active.png" id="back" onclick="none();"></a>
+                <li onclick="none();"><a href="index.html">Главная</a></li>
+                <li onclick="none();"><a href="#advantages">О компании</a></li>
+                <li onclick="none();"><a href="index.html#about">Продукция</a></li>
+                <li onclick="none();"><a href="index.html#contact">Контакты</a></li>
+            </ul>
+        </div>
+
+        <img onclick="visible_search();" src="img/search.png">
+        <div id="search">
+            <!-- <input type="text" name="search" placeholder="найти" /> -->
+            <input type="text" id="text-to-find" value="" title=""/>
+            <input type="button" onclick="javascript: FindOnPage('text-to-find'); return false;" value="Искать"/>
+        </div>
+
+        <div class="main">
+        </div>
+    </div>
+    <div class="header">
+        <div class="col-3">
+            <a href="index.html"><img src="img/logo.png"></a>
+        </div>
+        <div class="col-9">
+            <div class="phone">
+                <img src="img/phone.png">
+                <p>+38 056 79-55-777</p>
+            </div>
+            <p>Производство полиэтиленовой и полипопиленовой продукции</p>
+        </div>
+        <img class="header_img" src="img/header_img.png">
+    </div>
+
+    <div id="about">
+
+        <h3>Наша компания</h3>
+        <p>Компания OOO «Новис» производственное предприятием по выпуску полиэтиленовых и полипропиленовых упаковочных
+            материалов и пакетов с цветной печатью. У нас за плечами многолетний опыт работы, мы используем современное
+            оборудование для изготовления продукции.
+        </p>
+        <article class="goods">
+            <img src="img/goods1.png">
+            <h4>Полипропиленовая продукция</h4>
+            <p>Полипропиленовая упаковка в настоящее время одна из самых популярных упаковочных материалов. Данную
+                продукцию применяют в строительстве и логистике, хозяйстве.</p>
+            <a href="" class="button">Смотреть все</a>
+        </article>
+        <article class="goods">
+            <img src="img/goods2.png">
+            <h4>Полиэтиленовая продукция</h4>
+            <p>Мы изготавливаем продукцию с использованием технологий получения очень прочных материалов из полиэтилена
+                низкого и высокого давлени разными технологиями</p>
+            <a href="" class="button">Смотреть все</a>
+        </article>
+    </div>
+    <div id="advantages">
+        <h3>Приемущества нашей компании</h3>
+        <p>Наша компания всегда стремиться к высокому качеству товара
+            и отличным условиям сотрудничества. Качество и
+            производительность всегда на высоте</p>
+
+        <h4>cкорость</h4>
+        <p class="adv">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+            sed diam nonummy nibh.Lorem ipsum dolor sit amet,
+            consectetuer adipiscing elit, sed diam nonummy nibh.
+        </p>
+        <h4>ответственность</h4>
+        <p class="adv">Lorem ipsum dolor sit amet,
+            consectetuer adipiscing elit,
+            sed diam nonummy nibh.Lorem ipsum
+            dolor sit amet, consectetuer adipiscing elit,
+            sed diam nonummy nibh.
+        </p>
+        <h4>высокотехнологичность</h4>
+        <p class="adv">Lorem ipsum dolor sit amet,
+            consectetuer adipiscing elit,
+
+            amet,
+            consectetuer adipiscing elit, sed diam nonummy nibh.
+        </p>
+        <h4>производительность</h4>
+        <p class="adv">Lorem ipsum dolor sit amet,
+            consectetuer adipiscing elit, sed diam nonummy
+            nibh.Lorem ipsum dolor sit amet, consectetuer
+            adipiscing elit, sed diam nonummy nibh.
+        </p>
+
+        <p><span>Процесс производства продукции вы можете
+посмотреть пройдя <a href="" style="color: inherit;"><b>по ссылке</b></a></span></p>
+
+    </div>
+
+
+    <div id="">
+        <h3>Сертификаты</h3>
+        <div id="middle">
+
+            <a href="#"><img id='pict' src=""/></a>
+
+            <img src="img/right.png " id="left1" onclick='left()'>
+
+            <img src="img/right.png " id="right1" onclick='right()'>
+
+        </div>
+
+
+    </div>
+
+    <div id="news">
+        <div class="news_article">
+            <h3>Наши новости</h3>
+            <article>
+                <p>24.12.2016
+                <p>
+                <h4>Иновационные технологии в фасовочных изделиях</h4>
+                <p>Наиболее универсальный тип фасо&shyвоч&shyных из&shyде&shyлий. Ее
+                    произ&shyвод&shyство изго&shyтови&shyтель пер&shyвый осу&shyще&shyствля&shyет из
+                    пер&shyвич&shyного или вто&shyрич&shyного ма&shyте&shyриала</p>
+            </article>
+
+            <article>
+                <p>24.12.2016
+                <p>
+                <h4>Иновационные технологии в фасовочных изделиях</h4>
+                <p>Наиболее универсальный тип фасо&shyвоч&shyных из&shyде&shyлий. Ее
+                    произ&shyвод&shyство изго&shyтови&shyтель пер&shyвый осу&shyще&shyствля&shyет из
+                    пер&shyвич&shyного или вто&shyрич&shyного ма&shyте&shyриала</p>
+            </article>
+
+            <article>
+                <p>24.12.2016
+                <p>
+                <h4>Иновационные технологии в фасовочных изделиях</h4>
+                <p>Наиболее универсальный тип фасо&shyвоч&shyных из&shyде&shyлий. Ее
+                    произ&shyвод&shyство изго&shyтови&shyтель пер&shyвый осу&shyще&shyствля&shyет из
+                    пер&shyвич&shyного или вто&shyрич&shyного ма&shyте&shyриала</p>
+            </article>
+        </div>
+        <div class="news_button"><a href="" class="button">Все новости</a></div>
+    </div>
+
+    <div id="form_back">
+        <h3>Связаться с нами</h3>
+
+        <div class="yourajaxforma1">
+            <form method="post" id="FORM_ID">
+                <div class="yourajaxforma2">
+                    <input type="text" name="yourname" placeholder="Имя" yourbest="true"/>
+                </div>
+                <div class="yourajaxforma2">
+                    <input type="text" name="yourphone" placeholder="Номер телефона" yourbest="true"/>
+                </div>
+                <div class="yourajaxforma2">
+                    <input type="text" name="yourtown" placeholder="Город" yourbest="true"/>
+                </div>
+                <div class="yourajaxforma2">
+                    <input type="text" name="yourmail" placeholder="Email" yourbest="true"/>
+                </div>
+                <div class="yourajaxforma3">
+                    <textarea name="yourmsg" placeholder="Текст сообщения"></textarea>
+                </div>
+                <div class="yourajaxforma5" id="OTVET_FORMI" style="display: none;"><!--Ответ формы--></div>
+                <div class="yourajaxforma4 ">
+                    <input class="button" type="button" value="Отправить"
+                           onclick="AjaxFormRequest('OTVET_FORMI', 'FORM_ID', './form.php')"/>
+                </div>
+                <div style="text-align: right;" class="blavtors">
+
+                </div>
+            </form>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6286.795457386837!2d35.08422919524693!3d48.50885254293097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d958420b657a97%3A0xf88dd41f48855045!2z0LLRg9C70LjRhtGPINCW0YPRgNC90LDQu9GW0YHRgtGW0LIsIDksINCU0L3RltC_0YDQvsyBLCDQlNC90ZbQv9GA0L7Qv9C10YLRgNC-0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LA!5e0!3m2!1sru!2sru!4v1485513824685"
+                    width="100%" height="450" frameborder="0" style="border:0; margin: 0 auto;"
+                    allowfullscreen></iframe>
+        </div>
+
+    </div>
+
+
+    <footer id="contact">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="index.html#advantages">О компании</a></li>
+            <li><a href="index.html#about">Продукция</a></li>
+            <li><a href="index.html#contact">Контакты</a></li>
+        </ul>
+        <div>
+            <p>9а, Zhurnalistiv St, Dnipropetrovs'k,
+                Dnipropetrovsk Oblast, 49000</p>
+            <p>телефон: +38 056 79-55-777</p>
+        </div>
+        <div>
+            <img src="img/facebook.png">
+            <img src="img/instagram.png">
+        </div>
+
+    </footer>
+
+</div> <!-- сontainer -->
+
+</body>
+<script src="script/script.js"></script>
+</html>
